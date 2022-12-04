@@ -13,11 +13,6 @@ builder.Services.AddStackExchangeRedisCache(options => {
     options.Configuration = builder.Configuration["RedisConnectionString"].ToString();
        
 });
-// builder.Services.AddHttpsRedirection(options =>
-// {
-//     options.RedirectStatusCode = (int)HttpStatusCode.TemporaryRedirect;
-//     options.HttpsPort = 5001;
-// });
 
 
 var app = builder.Build();
